@@ -2,9 +2,11 @@
   "name": "tabela-lancamento",
   "version": "1.0.0",
   "description": "Esta aplicação lhe ajudará a calcular um valor mensal a ser pago e/ou poupado para a aquisição de um imóvel, recém ou pós-lançado.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:prod": "NODE_ENV=production webpack -p"
   },
   "keywords": [
     "Tabela",
@@ -12,5 +14,28 @@
     "Lançamento"
   ],
   "author": "Yury Tinos",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "babel-preset-env": "^1.7.0",
+    "compression-webpack-plugin": "^4.0.1",
+    "css-loader": "^4.2.1",
+    "exports-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
 }
